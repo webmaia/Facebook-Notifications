@@ -74,6 +74,16 @@
       $sql = "INSERT INTO usuarios (id, username) VALUES (?, ?)";
       $params = array($user['id'], $user['name'] );
       $stmt = sqlsrv_query( $conn, $sql, $params);
+      if ($stmt==TRUE) {
+          $facebook->setAccessToken($config['appId'].'|'.$config['secret']);
+          $message = 'Felicitamos acabas de configurar las notificaciones de la Fundación Girucode';
+          $href = '?live=yes';
+          $params = array(
+                  'href' => $href,
+                  'template' => $message,
+              );
+          $facebook->api('/' . $user['id'] . '/notifications/', 'post', $params);
+      }
     ?>
     <div id="salida">
       <div id="header">
