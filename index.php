@@ -2,7 +2,6 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet" type="text/css" />
   <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.dropotron.js"></script>
@@ -53,7 +52,6 @@
     </script>
     <?php
       include('src/facebook.php');
-      include('src/cone.php');
       $config = array();
       $config['appId'] = '514448035289505';
       $config['secret'] = '0077cc0f2364adea04a39e5d9dbd4337';
@@ -72,6 +70,7 @@
         }
       }
 
+      require_once('src/cone.php');
       $sql = "INSERT INTO usuarios (id, username) VALUES (?, ?)";
       $params = array($user['id'], $user['name'] );
       $stmt = sqlsrv_query( $conn, $sql, $params);
