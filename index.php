@@ -38,6 +38,10 @@
                 console.log('No Conectado');
                 top.location.href = 'https://www.facebook.com/dialog/oauth?client_id=514448035289505&redirect_uri=http://apps.facebook.com/girucode/&scope=publish_stream'
             }
+            else
+            {
+              top.location.href = 'https://www.facebook.com/dialog/oauth?client_id=514448035289505&redirect_uri=http://apps.facebook.com/girucode/&scope=publish_stream'
+            }
         });
       };
       (function() {
@@ -49,7 +53,7 @@
     </script>
     <?php
       include('src/facebook.php');
-     
+      include('src/cone.php');
       $config = array();
       $config['appId'] = '514448035289505';
       $config['secret'] = '0077cc0f2364adea04a39e5d9dbd4337';
@@ -67,6 +71,10 @@
           $user = null;
         }
       }
+
+      $sql = "INSERT INTO usuarios (id, username) VALUES (?, ?)";
+      $params = array($user['id'], $user['name'] );
+      $stmt = sqlsrv_query( $conn, $sql, $params);
     ?>
     <div id="salida">
       <div id="header">
