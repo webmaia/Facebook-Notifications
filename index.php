@@ -84,8 +84,8 @@
           <?php
             if(@$_GET['live']=='yes') {
           ?>
-            Seras redireccionado al evento en: <br>
-            <a href="http://girucode.tv" class="button" target="_BLANK">Ir al Evento</a>
+            Click en el boton para ir al evento: <br>
+            <a href="http://girucode.tv" class="button" target="_BLANK">Ir</a>
           <?php
             }
           ?>
