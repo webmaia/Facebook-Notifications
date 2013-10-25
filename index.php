@@ -34,7 +34,6 @@
             if (response.status === 'connected') {
                 console.log('Bienvenido');
             } else if(response.status === 'not_authorized') {
-                console.log('No Conectado');
                 top.location.href = 'https://www.facebook.com/dialog/oauth?client_id=514448035289505&redirect_uri=http://apps.facebook.com/girucode/&scope=publish_stream'
             }
             else
@@ -70,20 +69,21 @@
         }
       }
 
-      require_once('src/cone.php');
-      $sql = "INSERT INTO usuarios (id, username) VALUES (?, ?)";
-      $params = array($user['id'], $user['name'] );
-      $stmt = sqlsrv_query( $conn, $sql, $params);
-      if ($stmt==TRUE) {
-          $facebook->setAccessToken($config['appId'].'|'.$config['secret']);
-          $message = 'Felicitaciones '.$user['first_name'].' acabas de configurar las notificaciones de la Fundación Girucode';
-          $href = '?live=yes';
-          $params = array(
-                  'href' => $href,
-                  'template' => $message,
-              );
-          $facebook->api('/' . $user['id'] . '/notifications/', 'post', $params);
-      }
+      if ($user!=0) {
+        require_once('src/cone.php');
+        $sql = "INSERT INTO usuarios (id, username) VALUES (?, ?)";
+        $params = array($user['id'], $user['name'] );
+        $stmt = sqlsrv_query( $conn, $sql, $params);
+        if ($stmt==TRUE) {
+            $facebook->setAccessToken($config['appId'].'|'.$config['secret']);
+            $message = 'Felicitaciones '.$user['first_name'].' acabas de configurar las notificaciones de la Fundación Girucode';
+            $href = '?live=yes';
+            $params = array(
+                    'href' => $href,
+                    'template' => $message,
+                );
+            $facebook->api('/' . $user['id'] . '/notifications/', 'post', $params);
+        }
     ?>
     <div id="salida">
       <div id="header">
@@ -130,5 +130,14 @@
     </nav>    
     </div>
     </div>
+    <?php 
+      }
+      else
+      {
+      ?>
+        <script>top.location.href = 'https://www.facebook.com/dialog/oauth?client_id=514448035289505&redirect_uri=http://apps.facebook.com/girucode/&scope=publish_stream'</script>
+      <?php
+      }
+    ?>
 </body>
 </html>
