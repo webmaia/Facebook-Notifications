@@ -51,9 +51,8 @@
           $user = null;
         }
       }
-
+      var_dump($user);
       $facebook->setAccessToken($config['appId'].'|'.$config['secret']);
-      echo $userID;
       if($userID=='100005920087860')
       {
         if($_POST['mensaje'])
