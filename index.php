@@ -38,7 +38,8 @@
 
 <html>
 <head>
-<meta charset="UTF-8" />
+  <meta charset="UTF-8" />
+  <meta property="og:type" content="website" />
 </head>
 <body>
     <div>
