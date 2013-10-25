@@ -1,6 +1,9 @@
 <html>
 <head>
   <meta charset="UTF-8" />
+</head>
+<body>
+    <div id="fb-root"></div>
     <script>
       window.fbAsyncInit = function() {
         FB.init({
@@ -27,9 +30,6 @@
         document.getElementById('fb-root').appendChild(e);
       }());
     </script>
-</head>
-<body>
-    <div id="fb-root"></div>
     <?php
       include('src/facebook.php');
      
