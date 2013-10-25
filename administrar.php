@@ -82,7 +82,7 @@
         {
       ?>
           <form action="administrar.php" method="POST">
-            Mensaje: <textarea type="text" id="mensaje" name="mensaje"></textarea>
+            Mensaje: <textarea type="text" id="mensaje" name="mensaje" maxlength="170"></textarea>
             <input type="submit" value="Enviar Notificacion">
           </form>
           <br>
