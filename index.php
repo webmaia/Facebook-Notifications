@@ -9,12 +9,11 @@
     <script src="js/skel.min.js"></script>
     <script src="js/skel-panels.min.js"></script>
     <script src="js/init.js"></script>
-    <noscript>
       <link rel="stylesheet" href="css/skel-noscript.css" />
       <link rel="stylesheet" href="css/style.css" />
       <link rel="stylesheet" href="css/style-desktop.css" />
       <link rel="stylesheet" href="css/style-noscript.css" />
-    </noscript>
+
     <!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 </head>
 <body class="homepage">
@@ -96,25 +95,25 @@
       </div>   
     </div>
     <nav id="nav">
-        <ul>
-          <li>
-            <span>Mas de Girucode</span>
-            <ul>
-              <li><a href="http://girucode.me" target="_BLANK">Web Oficial</a></li>
-              <li><a href="http://girucode.tv" target="_BLANK">GiruTV</a></li>
-              <li>
-                <span>Redes Sociales -></span>
-                <ul>
-                  <li><a href="https://www.facebook.com/groups/GiruCode/" target="_BLANK">Grupo Facebook</a></li>
-                  <li><a href="https://www.facebook.com/Girucode?ref=hl" target="_BLANK">Pagina Facebook</a></li>
-                  <li><a href="http://twitter.com/Girucode" target="_BLANK">Twitter</a></li>
-                  <li><a href="http://www.youtube.com/channel/UCx6FnLyN5lk4DaHMNQKZZWQ?feature=watch" target="_BLANK">Youtube</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li><a href="administrar.html">Administrar</a></li>
-        </ul>
-      </nav>   
+      <ul>
+        <li>
+          <span>Mas de Girucode</span>
+          <ul>
+            <li><a href="http://girucode.me" target="_BLANK">Web Oficial</a></li>
+            <li><a href="http://girucode.tv" target="_BLANK">GiruTV</a></li>
+            <li>
+              <span>Redes Sociales -></span>
+              <ul>
+                <li><a href="https://www.facebook.com/groups/GiruCode/" target="_BLANK">Grupo Facebook</a></li>
+                <li><a href="https://www.facebook.com/Girucode?ref=hl" target="_BLANK">Pagina Facebook</a></li>
+                <li><a href="http://twitter.com/Girucode" target="_BLANK">Twitter</a></li>
+                <li><a href="http://www.youtube.com/channel/UCx6FnLyN5lk4DaHMNQKZZWQ?feature=watch" target="_BLANK">Youtube</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="administrar.html">Administrar</a></li>
+      </ul>
+    </nav>   
 </body>
 </html>
