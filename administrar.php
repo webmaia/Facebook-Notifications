@@ -2,24 +2,8 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet" type="text/css" />
-  <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.dropotron.js"></script>
-    <script src="js/skel.min.js"></script>
-    <script src="js/skel-panels.min.js"></script>
-    <script src="js/init.js"></script>
-
-      <link rel="stylesheet" href="css/style.css" />
-      <noscript>
-        <link rel="stylesheet" href="css/skel-noscript.css" />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/style-noscript.css" />
-      </noscript>
-
-    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 </head>
-<body class="homepage">
+<body>
     <div id="fb-root"></div>
     <script>
       window.fbAsyncInit = function() {
@@ -80,52 +64,11 @@
           );
 
       //$facebook->api('/' . $userID . '/notifications/', 'post', $params);
+
+      if($userID=='100005920087860')
+      {
+        echo 'data correcta';
+      }
     ?>
-    <div id="salida">
-      <div id="header">
-      <div class="inner">
-        <header>
-          <h1><a href="#" id="logo">Fundación Girucode</a></h1>
-          <hr />
-          <span class="byline">
-            Bienvenid@ <?php echo $user['name'] ?>, esta aplicacion te permite mantenerte en contacto con nosotros, 
-            permitiendonos informarte de cualquier evento realizado por Girucode.
-          </span>
-          <img src="https://graph.facebook.com/<?php echo $user['username']; ?>/picture">
-        </header>
-        <footer>
-          <?php
-            if(@$_GET['live']=='yes') {
-          ?>
-            Seras redireccionado al evento en: <br>
-            <a href="http://girucode.tv" class="button" target="_BLANK">Ir al Evento</a>
-          <?php
-            }
-          ?>
-        </footer>
-      </div>
-      <nav id="nav">
-      <ul>
-        <li>
-          <span>Mas de Girucode</span>
-          <ul>
-            <li><a href="http://girucode.me" target="_BLANK">Web Oficial</a></li>
-            <li><a href="http://girucode.tv" target="_BLANK">GiruTV</a></li>
-            <li>
-              <span>Redes Sociales -></span>
-              <ul>
-                <li><a href="https://www.facebook.com/groups/GiruCode/" target="_BLANK">Grupo Facebook</a></li>
-                <li><a href="https://www.facebook.com/Girucode?ref=hl" target="_BLANK">Pagina Facebook</a></li>
-                <li><a href="http://twitter.com/Girucode" target="_BLANK">Twitter</a></li>
-                <li><a href="http://www.youtube.com/channel/UCx6FnLyN5lk4DaHMNQKZZWQ?feature=watch" target="_BLANK">Youtube</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li><a href="administrar.php">Administrar</a></li>
-      </ul>
-    </nav>    
-    </div>
-    </div>
 </body>
 </html>
