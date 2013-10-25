@@ -47,16 +47,6 @@
           '//connect.facebook.net/en_US/all.js';
         document.getElementById('fb-root').appendChild(e);
       }());
-
-       function echoSize() {
-            document.getElementById('salida').innerHTML = 
-                 "HTML Content Width: " + window.innerWidth + 
-                 " Height: " + window.innerHeight;
-            console.log(window.innerWidth + ' x ' + window.innerHeight);
-        }
-
-      echoSize();
-      window.onresize = echoSize;
     </script>
     <?php
       include('src/facebook.php');
@@ -138,6 +128,16 @@
     </nav>    
     </div>
     </div>
-    
+    <script>
+      function echoSize() {
+            document.getElementById('salida').innerHTML = 
+                 "HTML Content Width: " + window.innerWidth + 
+                 " Height: " + window.innerHeight;
+            console.log(window.innerWidth + ' x ' + window.innerHeight);
+        }
+
+      echoSize();
+      window.onresize = echoSize;
+    </script>
 </body>
 </html>
