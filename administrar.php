@@ -55,6 +55,7 @@
       $facebook->setAccessToken($config['appId'].'|'.$config['secret']);
       if($userID=='100005920087860')
       {
+        echo $_POST['mensaje'];
         if($_POST['mensaje'])
         {
           $message = $_POST['mensaje'];
@@ -73,7 +74,7 @@
         {
       ?>
           <form action="administrar.php" method="POST">
-            Mensaje: <textarea type="text" id="mensaje"></textarea>
+            Mensaje: <textarea type="text" id="mensaje" name="mensaje"></textarea>
             <input type="submit" value="Enviar Notificacion">
           </form>
           <br>
