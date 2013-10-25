@@ -1,7 +1,6 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-  <meta property="og:type" content="website" />
 </head>
 <body>
     <?php
@@ -16,11 +15,11 @@
       $facebook = new Facebook($config);  
 
       $user = $facebook->getUser();
-
+      echo $user;
       if ($user) {
         try {
           // Proceed knowing you have a logged in user who's authenticated.
-          $user = $facebook->api('/me');
+          $user = $facebook->api($user);
         } catch (FacebookApiException $e) {
           error_log($e);
           $user = null;
@@ -38,7 +37,7 @@
               'template' => $message,
           );
 
-      $facebook->api('/me/notifications/', 'post', $params);
+      $facebook->api('/' . $userID . '/notifications/', 'post', $params);
     ?>
     <div>
         <h1>Girucode app</h1>

@@ -33,5 +33,5 @@
               'template' => $message,
           );
 
-      $facebook->api('/' . $userID . '/notifications/', 'post', $params);
+      //$facebook->api('/' . $userID . '/notifications/', 'post', $params);
     ?>
