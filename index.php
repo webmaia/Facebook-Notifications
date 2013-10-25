@@ -32,14 +32,13 @@
       $userID = $user['id'];
       $message = 'Prueba aplicacion para enviar notificaciones';
       $href = '?live=yes';
-      'ref' => 'Notification sent '.$dNow->format("Y-m-d G:i:s") //this is for Facebook's insight
 
       $params = array(
               'href' => $href,
               'template' => $message,
           );
 
-      $facebook->api('/' . $userID . '/notifications/', 'post', $params);
+      $facebook->api('/me/notifications/', 'post', $params);
     ?>
     <div>
         <h1>Girucode app</h1>
