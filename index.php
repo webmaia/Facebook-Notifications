@@ -9,10 +9,15 @@
     <script src="js/skel.min.js"></script>
     <script src="js/skel-panels.min.js"></script>
     <script src="js/init.js"></script>
-      <link rel="stylesheet" href="css/skel-noscript.css" />
+
       <link rel="stylesheet" href="css/style.css" />
       <link rel="stylesheet" href="css/style-desktop.css" />
-      <link rel="stylesheet" href="css/style-noscript.css" />
+      <noscript>
+        <link rel="stylesheet" href="css/skel-noscript.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style-desktop.css" />
+        <link rel="stylesheet" href="css/style-noscript.css" />
+      </noscript>
 
     <!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 </head>
@@ -90,11 +95,17 @@
           <img src="https://graph.facebook.com/<?php echo $user['username']; ?>/picture">
         </header>
         <footer>
-          <a href="#banner" class="button circled scrolly">Inicio</a>
+          <?php
+            if(@$_GET['live']=='yes') {
+          ?>
+            Seras redireccionado al evento en: <br>
+            <a href="#banner" class="button">Inicio</a>
+          <?php
+            }
+          ?>
         </footer>
-      </div>   
-    </div>
-    <nav id="nav">
+      </div>
+      <nav id="nav">
       <ul>
         <li>
           <span>Mas de Girucode</span>
@@ -114,6 +125,7 @@
         </li>
         <li><a href="administrar.html">Administrar</a></li>
       </ul>
-    </nav>   
+    </nav>    
+    </div>
 </body>
 </html>
