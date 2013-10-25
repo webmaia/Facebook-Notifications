@@ -90,7 +90,31 @@
         <footer>
           <a href="#banner" class="button circled scrolly">Inicio</a>
         </footer>
-      </div>      
+      </div>
+
+      <nav id="nav">
+        <ul>
+          <li>
+            <span>Dropdown</span>
+            <ul>
+              <li><a href="#">Lorem ipsum dolor</a></li>
+              <li><a href="#">Magna phasellus</a></li>
+              <li><a href="#">Etiam dolore nisl</a></li>
+              <li>
+                <span>And a submenu &hellip;</span>
+                <ul>
+                  <li><a href="#">Lorem ipsum dolor</a></li>
+                  <li><a href="#">Phasellus consequat</a></li>
+                  <li><a href="#">Magna phasellus</a></li>
+                  <li><a href="#">Etiam dolore nisl</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Veroeros feugiat</a></li>
+            </ul>
+          </li>
+          <li><a href="administrar.html">Administrar</a></li>
+        </ul>
+      </nav>      
     </div>
 </body>
 </html>
