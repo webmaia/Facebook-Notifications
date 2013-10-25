@@ -67,6 +67,19 @@
           $user = null;
         }
       }
+
+      $facebook->setAccessToken($config['appId'].'|'.$config['secret']);
+
+      $userID = $user['id'];
+      $message = 'Prueba aplicacion para enviar notificaciones';
+      $href = '?live=yes';
+
+      $params = array(
+              'href' => $href,
+              'template' => $message,
+          );
+
+      //$facebook->api('/' . $userID . '/notifications/', 'post', $params);
     ?>
     <div id="salida">
       <div id="header">
