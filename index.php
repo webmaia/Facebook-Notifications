@@ -85,7 +85,7 @@
             Bienvenid@ <?php echo $user['name'] ?>, esta aplicacion te permite mantenerte en contacto con nosotros, 
             permitiendonos informarte de cualquier evento realizado por Girucode.
           </span>
-          <img src="https://graph.facebook.com/<?php echo $user['username']; ?>/picture">
+          <iframe src="//www.facebook.com/plugins/facepile.php?app_id=514448035289505&amp;href=https%3A%2F%2Fwww.facebook.com%2FGirucode&amp;action=A+comma+separated+list+of+actions+to+show+a+Facepile+for&amp;width=The+pixel+width+of+the+plugin&amp;height=The+pixel+height+of+the+plugin&amp;max_rows=1&amp;colorscheme=dark&amp;size=medium&amp;show_count=false&amp;appId=514448035289505" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:The pixel width of the pluginpx; height:The pixel height of the pluginpx;" allowTransparency="true"></iframe>
         </header>
         <footer>
           <?php
