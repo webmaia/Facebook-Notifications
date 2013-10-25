@@ -37,6 +37,8 @@
                 top.location.href = 'https://www.facebook.com/dialog/oauth?client_id=514448035289505&redirect_uri=http://apps.facebook.com/girucode/&scope=publish_stream'
             }
         });
+
+        FB.Canvas.setSize({ height: 620 });
       };
       (function() {
         var e = document.createElement('script'); e.async = true;
@@ -82,9 +84,12 @@
     <div id="header">
       <div class="inner">
         <header>
-          <h1><a href="#" id="logo">Fundacion Girucode</a></h1>
+          <h1><a href="#" id="logo">Fundación Girucode</a></h1>
           <hr />
-          <span class="byline">Enterate de todas las notificias de la fundacion Girucode</span>
+          <span class="byline">
+            Bienvenid@ <?php echo $user['name'] ?>, esta aplicacion te permite mantenerte en contacto con nosotros, 
+            permitiendonos informarte de cualquier evento realizado por la Girucode
+          </span>
           <img src="https://graph.facebook.com/<?php echo $user['username']; ?>/picture">
         </header>
         <footer>
