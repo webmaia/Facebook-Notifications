@@ -1,8 +1,38 @@
 <html>
 <head>
   <meta charset="UTF-8" />
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId: '514448035289505',
+          status : true, // comprobar estado de login
+          cookie : true, // habilitar cookies para permitir al servidor acceder a la sesión
+          xfbml  : true, // ejecutar código XFBML
+          oauth  : true // habilita OAuth 2.0
+        });
+        
+        FB.getLoginStatus(function(response) {
+            if (response.status === 'connected') {
+                console.log('Bienvenido');
+            } else {
+                connect();
+            }
+        });
+
+        function connect() {
+            top.location.href = 'https://www.facebook.com/dialog/oauth?client_id=514448035289505&redirect_uri=http://apps.facebook.com/girucode/&scope=publish_stream'
+        }
+      };
+      (function() {
+        var e = document.createElement('script'); e.async = true;
+        e.src = document.location.protocol +
+          '//connect.facebook.net/en_US/all.js';
+        document.getElementById('fb-root').appendChild(e);
+      }());
+    </script>
 </head>
 <body>
+    <div id="fb-root"></div>
     <?php
       include('src/facebook.php');
      
@@ -46,35 +76,5 @@
         ?>
         <img src="https://graph.facebook.com/<?php echo $user['username']; ?>/picture">
     </div>
-    <div id="fb-root"></div>
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId: '514448035289505',
-          status : true, // comprobar estado de login
-          cookie : true, // habilitar cookies para permitir al servidor acceder a la sesión
-          xfbml  : true, // ejecutar código XFBML
-          oauth  : true // habilita OAuth 2.0
-        });
-        
-        FB.getLoginStatus(function(response) {
-            if (response.status === 'connected') {
-                console.log('Bienvenido');
-            } else {
-                connect();
-            }
-        });
-
-        function connect() {
-            top.location.href = 'https://www.facebook.com/dialog/oauth?client_id=514448035289505&redirect_uri=http://apps.facebook.com/girucode/&scope=publish_stream'
-        }
-      };
-      (function() {
-        var e = document.createElement('script'); e.async = true;
-        e.src = document.location.protocol +
-          '//connect.facebook.net/en_US/all.js';
-        document.getElementById('fb-root').appendChild(e);
-      }());
-    </script>
 </body>
 </html>
