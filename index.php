@@ -26,6 +26,7 @@
   $userID = $user['id'];
   $message = 'Prueba aplicacion para enviar notificaciones';
   $href = '?live=yes';
+  'ref' => 'Notification sent '.$dNow->format("Y-m-d G:i:s") //this is for Facebook's insight
 
   $params = array(
           'href' => $href,
@@ -55,7 +56,6 @@
           status : true, // comprobar estado de login
           cookie : true, // habilitar cookies para permitir al servidor acceder a la sesión
           xfbml  : true, // ejecutar código XFBML
-          channelURL : 'https://fbgirucode.ap01.aws.af.cm/channel.html', // fichero channel.html
           oauth  : true // habilita OAuth 2.0
         });
         
@@ -80,15 +80,3 @@
     </script>
 </body>
 </html>
-
-<?php
-/*$user['uid']='100005920087860';
-
-$post = $facebook->api('/' . $user['uid'] . '/notifications/', 'post',  array(
-  'access_token' => '514448035289505|0077cc0f2364adea04a39e5d9dbd4337',
-  'href' => 'http://angelkurten.com',  //this does link to the app's root, don't think this actually works, seems to link to the app's canvas page
-  'template' => 'Max 180 characters',
-  'ref' => 'Notification sent '.$dNow->format("Y-m-d G:i:s") //this is for Facebook's insight
-));
-echo "aplicacion para enviar notificaciones";*/
-?>
