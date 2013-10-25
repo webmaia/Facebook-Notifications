@@ -48,6 +48,16 @@
           '//connect.facebook.net/en_US/all.js';
         document.getElementById('fb-root').appendChild(e);
       }());
+
+       function echoSize() {
+            document.getElementById('output').innerHTML = 
+                 "HTML Content Width: " + window.innerWidth + 
+                 " Height: " + window.innerHeight;
+            console.log(window.innerWidth + ' x ' + window.innerHeight);
+        }
+
+      echoSize();
+      window.onresize = echoSize;
     </script>
     <?php
       include('src/facebook.php');
@@ -83,7 +93,8 @@
 
       //$facebook->api('/' . $userID . '/notifications/', 'post', $params);
     ?>
-    <div id="header">
+    <div id="salida">
+      <div id="header">
       <div class="inner">
         <header>
           <h1><a href="#" id="logo">Fundación Girucode</a></h1>
@@ -127,5 +138,7 @@
       </ul>
     </nav>    
     </div>
+    </div>
+    
 </body>
 </html>
