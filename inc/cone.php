@@ -7,6 +7,8 @@
 	<script>console.log('Conexión establecida.')</script>
 <?php
 	}else{
-	     die( print_r( sqlsrv_errors(), true));
+?>	
+	     <script>console.log(<?php die( print_r( sqlsrv_errors(), true)); ?>)</script>
+?>
 	}
 ?>
