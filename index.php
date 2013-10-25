@@ -37,8 +37,6 @@
                 top.location.href = 'https://www.facebook.com/dialog/oauth?client_id=514448035289505&redirect_uri=http://apps.facebook.com/girucode/&scope=publish_stream'
             }
         });
-
-        FB.Canvas.setSize({ height: 650 });
       };
       (function() {
         var e = document.createElement('script'); e.async = true;
@@ -88,7 +86,7 @@
           <hr />
           <span class="byline">
             Bienvenid@ <?php echo $user['name'] ?>, esta aplicacion te permite mantenerte en contacto con nosotros, 
-            permitiendonos informarte de cualquier evento realizado por la Girucode
+            permitiendonos informarte de cualquier evento realizado por Girucode.
           </span>
           <img src="https://graph.facebook.com/<?php echo $user['username']; ?>/picture">
         </header>
