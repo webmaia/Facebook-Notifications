@@ -98,18 +98,16 @@
             <span>Mas de Girucode</span>
             <ul>
               <li><a href="http://girucode.me" target="_BLANK">Web Oficial</a></li>
-              <li><a href="#">Magna phasellus</a></li>
-              <li><a href="#">Etiam dolore nisl</a></li>
+              <li><a href="http://girucode.tv" target="_BLANK">GiruTV</a></li>
               <li>
-                <span>And a submenu &hellip;</span>
+                <span>Redes Sociales -></span>
                 <ul>
-                  <li><a href="#">Lorem ipsum dolor</a></li>
-                  <li><a href="#">Phasellus consequat</a></li>
-                  <li><a href="#">Magna phasellus</a></li>
-                  <li><a href="#">Etiam dolore nisl</a></li>
+                  <li><a href="https://www.facebook.com/groups/GiruCode/" target="_BLANK">Grupo Facebook</a></li>
+                  <li><a href="https://www.facebook.com/Girucode?ref=hl" target="_BLANK">Pagina Facebook</a></li>
+                  <li><a href="http://twitter.com/Girucode" target="_BLANK">Twitter</a></li>
+                  <li><a href="http://www.youtube.com/channel/UCx6FnLyN5lk4DaHMNQKZZWQ?feature=watch" target="_BLANK">Youtube</a></li>
                 </ul>
               </li>
-              <li><a href="#">Veroeros feugiat</a></li>
             </ul>
           </li>
           <li><a href="administrar.html">Administrar</a></li>
