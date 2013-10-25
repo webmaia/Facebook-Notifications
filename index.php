@@ -80,11 +80,17 @@
       //$facebook->api('/' . $userID . '/notifications/', 'post', $params);
     ?>
     <div id="header">
-        <h1>Girucode app</h1>
-        <?php
-          echo 'Bienvenid@ '. $user['name'];
-        ?>
-        <img src="https://graph.facebook.com/<?php echo $user['username']; ?>/picture">
+      <div class="inner">
+        <header>
+          <h1><a href="#" id="logo">Fundacion Girucode</a></h1>
+          <hr />
+          <span class="byline">Enterate de todas las notificias de la fundacion Girucode</span>
+          <img src="https://graph.facebook.com/<?php echo $user['username']; ?>/picture">
+        </header>
+        <footer>
+          <a href="#banner" class="button circled scrolly">Inicio</a>
+        </footer>
+      </div>      
     </div>
 </body>
 </html>
