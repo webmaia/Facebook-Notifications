@@ -74,6 +74,7 @@
       ?>
           <form action="procesar.php" method="POST">
             Mensaje: <textarea type="text" id="mensaje"></textarea>
+            <input type="submit" value="Enviar Notificacion">
           </form>
       <?php
         }
