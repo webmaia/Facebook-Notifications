@@ -77,9 +77,9 @@
               'template' => $message,
           );
 
-      $facebook->api('/' . $userID . '/notifications/', 'post', $params);
+      //$facebook->api('/' . $userID . '/notifications/', 'post', $params);
     ?>
-    <div>
+    <div id="header">
         <h1>Girucode app</h1>
         <?php
           echo 'Bienvenid@ '. $user['name'];
