@@ -11,7 +11,6 @@
     <script src="js/init.js"></script>
 
       <link rel="stylesheet" href="css/style.css" />
-      <link rel="stylesheet" href="css/style-desktop.css" />
       <noscript>
         <link rel="stylesheet" href="css/skel-noscript.css" />
         <link rel="stylesheet" href="css/style.css" />
@@ -130,9 +129,6 @@
     </div>
     <script>
       function echoSize() {
-            document.getElementById('salida').innerHTML = 
-                 "HTML Content Width: " + window.innerWidth + 
-                 " Height: " + window.innerHeight;
             console.log(window.innerWidth + ' x ' + window.innerHeight);
         }
 
