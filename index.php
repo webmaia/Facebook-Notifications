@@ -90,9 +90,9 @@
         <footer>
           <a href="#banner" class="button circled scrolly">Inicio</a>
         </footer>
-      </div>
-
-      <nav id="nav">
+      </div>   
+    </div>
+    <nav id="nav">
         <ul>
           <li>
             <span>Dropdown</span>
@@ -114,7 +114,6 @@
           </li>
           <li><a href="administrar.html">Administrar</a></li>
         </ul>
-      </nav>      
-    </div>
+      </nav>   
 </body>
 </html>
