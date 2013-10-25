@@ -14,14 +14,11 @@
         FB.getLoginStatus(function(response) {
             if (response.status === 'connected') {
                 console.log('Bienvenido');
-            } else {
-                connect();
+            } else if(response.status === 'not_authorized') {
+                console.log('No Conectado');
+                top.location.href = 'https://www.facebook.com/dialog/oauth?client_id=514448035289505&redirect_uri=http://apps.facebook.com/girucode/&scope=publish_stream'
             }
         });
-
-        function connect() {
-            top.location.href = 'https://www.facebook.com/dialog/oauth?client_id=514448035289505&redirect_uri=http://apps.facebook.com/girucode/&scope=publish_stream'
-        }
       };
       (function() {
         var e = document.createElement('script'); e.async = true;
@@ -36,7 +33,6 @@
     <?php
       include('src/facebook.php');
      
-
       $config = array();
       $config['appId'] = '514448035289505';
       $config['secret'] = '0077cc0f2364adea04a39e5d9dbd4337';
