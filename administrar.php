@@ -54,20 +54,35 @@
 
       $facebook->setAccessToken($config['appId'].'|'.$config['secret']);
 
-      $userID = $user['id'];
-      $message = 'Prueba aplicacion para enviar notificaciones';
-      $href = '?live=yes';
-
-      $params = array(
-              'href' => $href,
-              'template' => $message,
-          );
-
-      //$facebook->api('/' . $userID . '/notifications/', 'post', $params);
-
       if($userID=='100005920087860')
       {
-        echo 'data correcta';
+        if($_POST['mensaje'])
+        {
+          $userID = $user['id'];
+          $message = $_POST['mensaje'];
+          $href = '?live=yes';
+
+          $params = array(
+                  'href' => $href,
+                  'template' => $message,
+              );
+
+          $facebook->api('/' . $userID . '/notifications/', 'post', $params);
+
+          echo 'Mensaje enviado.. <a href="administar.php">Enviar otro</a>';
+        }
+        else
+        {
+      ?>
+          <form action="procesar.php" method="POST">
+            Mensaje: <textarea type="text" id="mensaje"></textarea>
+          </form>
+      <?php
+        }
+      }
+      else
+      {
+        echo 'Estas tratando de ingresar a una zona privada... <a href="index.php">Volver a la aplicacion</a>';
       }
     ?>
 </body>
