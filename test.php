@@ -11,10 +11,21 @@
 	     die( print_r( sqlsrv_errors(), true));
 	}
 
-	$sql = "INSERT INTO usuarios (id, username) VALUES (?, ?)";
+	/*$sql = "INSERT INTO usuarios (id, username) VALUES (?, ?)";
 	$params = array(1, "prueba");
 
 	$stmt = sqlsrv_query( $conn, $sql, $params);
 	if( $stmt === false ) {
 	     die( print_r( sqlsrv_errors(), true));
+	}*/
+
+	$sql = "SELECT * FROM usuarios";
+
+	$stmt = sqlsrv_query( $conn, $sql);
+	if( $stmt === false ) {
+	     die( print_r( sqlsrv_errors(), true));
+	}
+
+	while( $row = sqlsrv_fetch_array( $stmt, SQLSRV_FETCH_ASSOC) ) {
+      echo $row['id'].", ".$row['username']."<br />";
 	}
