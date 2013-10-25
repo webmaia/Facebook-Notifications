@@ -109,7 +109,6 @@
             </li>
           </ul>
         </li>
-        <li><a href="administrar.php">Administrar</a></li>
       </ul>
     </nav>    
     </div>
