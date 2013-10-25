@@ -15,7 +15,6 @@
       <noscript>
         <link rel="stylesheet" href="css/skel-noscript.css" />
         <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/style-desktop.css" />
         <link rel="stylesheet" href="css/style-noscript.css" />
       </noscript>
 
@@ -50,7 +49,7 @@
       }());
 
        function echoSize() {
-            document.getElementById('output').innerHTML = 
+            document.getElementById('salida').innerHTML = 
                  "HTML Content Width: " + window.innerWidth + 
                  " Height: " + window.innerHeight;
             console.log(window.innerWidth + ' x ' + window.innerHeight);
