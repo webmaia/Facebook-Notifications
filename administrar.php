@@ -72,10 +72,12 @@
         else
         {
       ?>
-          <form action="procesar.php" method="POST">
+          <form action="administrar.php" method="POST">
             Mensaje: <textarea type="text" id="mensaje"></textarea>
             <input type="submit" value="Enviar Notificacion">
           </form>
+          <br>
+          <a href="index.php">Volver a la aplicacion</a>
       <?php
         }
       }
