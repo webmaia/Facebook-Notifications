@@ -10,3 +10,11 @@
 	     echo "Conexión no se pudo establecer.<br />";
 	     die( print_r( sqlsrv_errors(), true));
 	}
+
+	$sql = "INSERT INTO usuarios (id, username) VALUES (?, ?)";
+	$params = array(1, "prueba");
+
+	$stmt = sqlsrv_query( $conn, $sql, $params);
+	if( $stmt === false ) {
+	     die( print_r( sqlsrv_errors(), true));
+	}
