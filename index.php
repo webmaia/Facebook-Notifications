@@ -95,9 +95,9 @@
     <nav id="nav">
         <ul>
           <li>
-            <span>Dropdown</span>
+            <span>Mas de Girucode</span>
             <ul>
-              <li><a href="#">Lorem ipsum dolor</a></li>
+              <li><a href="http://girucode.me" target="_BLANK">Web Oficial</a></li>
               <li><a href="#">Magna phasellus</a></li>
               <li><a href="#">Etiam dolore nisl</a></li>
               <li>
