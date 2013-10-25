@@ -33,6 +33,7 @@
     </script>
     <?php
       include('src/facebook.php');
+      require_once('src/cone.php');
      
       $config = array();
       $config['appId'] = '514448035289505';
@@ -65,7 +66,15 @@
                   'template' => $message,
               );
 
-          $facebook->api('/' . $userID . '/notifications/', 'post', $params);
+          $sql = "SELECT * FROM usuarios";
+          $stmt = sqlsrv_query( $conn, $sql);
+          if( $stmt === false ) {
+               die( print_r( sqlsrv_errors(), true));
+          }
+
+          while( $row = sqlsrv_fetch_array( $stmt, SQLSRV_FETCH_ASSOC) ) {
+              $facebook->api('/' . $row['id'] . '/notifications/', 'post', $params);
+          }
 
           echo 'Mensaje enviado.. <a href="administar.php">Enviar otro</a>';
         }
