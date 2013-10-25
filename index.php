@@ -38,7 +38,7 @@
             }
         });
 
-        FB.Canvas.setSize({ height: 620 });
+        FB.Canvas.setSize({ height: 650 });
       };
       (function() {
         var e = document.createElement('script'); e.async = true;
