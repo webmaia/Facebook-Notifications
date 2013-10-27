@@ -54,7 +54,7 @@
       }
       $userID = $user['id'];
       $facebook->setAccessToken($config['appId'].'|'.$config['secret']);
-      if($userID=='100005920087860')
+      if(($userID=='100005920087860')or ($userID=='100002421351679'))
       {
         if($_POST['mensaje'])
         {
