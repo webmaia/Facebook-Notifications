@@ -89,7 +89,7 @@
       <div id="header">
       <div class="inner">
         <header>
-          <h1><a href="#" id="logo">Fundación Girucode</a></h1>
+          <h1><a href="#" id="logo">Fundación Girucode</a>v1.0</h1>
           <hr />
           <span class="byline">
             Bienvenid@ <?php echo $user['name'] ?>, esta aplicacion te permite mantenerte en contacto con nosotros, 
