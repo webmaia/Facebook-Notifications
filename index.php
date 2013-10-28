@@ -89,7 +89,8 @@
       <div id="header">
       <div class="inner">
         <header>
-          <h1><a href="#" id="logo">Fundación Girucode</a>v1.0</h1>
+          <h1><a href="#" id="logo">Fundación Girucode</a></h1>
+          <h6>v1.0 Developed by <a href="https://www.facebook.com/angel.kurten?ref=tn_tnmn">Angel Kurten</a></h6>
           <hr />
           <span class="byline">
             Bienvenid@ <?php echo $user['name'] ?>, esta aplicacion te permite mantenerte en contacto con nosotros, 
@@ -101,8 +102,8 @@
           <?php
             if(@$_GET['live']=='yes') {
           ?>
-            Click en el boton para ir al evento: <br>
-            <a href="http://girucode.tv" class="button" target="_BLANK">Ir</a>
+            Ir al grupo y feliciar a Girucode: <br>
+            <a href="https://www.facebook.com/groups/GiruCode/" class="button" target="_BLANK">Ir</a>
           <?php
             }
           ?>
