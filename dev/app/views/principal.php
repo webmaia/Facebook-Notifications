@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-  <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+  <!--[if lte IE 8]><script src="<?php echo base_url(); ?>js/index/html5shiv.js"></script><![endif]-->
     <script src="<?php echo base_url(); ?>js/index/jquery.min.js"></script>
     <script src="<?php echo base_url(); ?>js/index/jquery.dropotron.js"></script>
     <script src="<?php echo base_url(); ?>js/index/skel.min.js"></script>
@@ -83,14 +83,5 @@
     </nav>    
     </div>
     </div>
-    <?php 
-      }
-      else
-      {
-      ?>
-        <script>top.location.href = 'https://www.facebook.com/dialog/oauth?client_id=514448035289505&redirect_uri=http://apps.facebook.com/girucode/&scope=publish_stream'</script>
-      <?php
-      }
-    ?>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <?php
-    class Example extends CI_Controller {
+    class Example extends MY_Controller {
 
     function __construct()
     {
@@ -8,26 +8,16 @@
 
     function index()
     {
+        $data['user']=$this->isUser();
 
-        $user = $this->facebook->getUser();
-
-        if ($user) {
-            try {
-                $data['user'] = $this->facebook
-                    ->api('/me');
-            } catch (FacebookApiException $e) {
-                $user = null;
-            }
+        if($data['user']!=false)
+        {
+            $this->load->view('principal',$data);
         }
-
-        if ($user) {
-            $data['logout_url'] = $this->facebook
-                ->getLogoutUrl();
-        } else {
-            $data['login_url'] = $this->facebook
-                ->getLoginUrl();
+        else
+        {
+            $this->load->view('redireccion');
         }
-
-        $this->load->view('principal',$data);
+        
     }
 }
