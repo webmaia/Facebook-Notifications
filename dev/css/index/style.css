@@ -1028,7 +1028,7 @@
 	#header
 	{
 		position: relative;
-		background-image: url('../images/header.jpg');
+		background-image: url('https://girufb.azurewebsites.net/images/header.jpg');
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;

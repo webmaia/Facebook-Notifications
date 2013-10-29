@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="<?php echo base_url(); ?>css/index/style-noscript.css" />
       </noscript>
 
-    <!--[if lte IE 8]><link rel="stylesheet" href="<?php //echo base_url(); ?>css/index/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="<?php echo base_url(); ?>css/index/css/ie8.css" /><![endif]-->
 </head>
 <body class="homepage">
     <div id="salida">
@@ -24,7 +24,7 @@
       <div class="inner">
         <header>
           <h1 id="logo">Fundación Girucode</h1>
-          <h5>v1.0 Developed by<a href="https://www.facebook.com/angel.kurten?ref=tn_tnmn"> Angel Kurten</a></h5>
+          <h5>v2.0 Developed by<a href="https://www.facebook.com/angel.kurten?ref=tn_tnmn"> Angel Kurten</a></h5>
           <hr />
           <span class="byline">
             Bienvenid@ <?php echo $user['name'] ?>, esta aplicacion te permite mantenerte en contacto con nosotros, 
