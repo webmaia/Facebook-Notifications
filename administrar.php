@@ -86,6 +86,9 @@
             <input type="submit" value="Enviar Notificacion">
           </form>
           <br>
+          <hr>
+          <?php $row = sqlsrv_fetch_array( $stmt, SQLSRV_FETCH_ASSOC); echo count($row); ?>
+          <br>
           <a href="index.php">Volver a la aplicacion</a>
       <?php
         }

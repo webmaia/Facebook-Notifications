@@ -34,11 +34,11 @@
             if (response.status === 'connected') {
                 console.log('Bienvenido');
             } else if(response.status === 'not_authorized') {
-                top.location.href = 'https://www.facebook.com/dialog/oauth?client_id=212654485574232&redirect_uri=http://apps.facebook.com/girucobeta/&scope=publish_stream'
+                top.location.href = 'https://www.facebook.com/dialog/oauth?client_id=514448035289505&redirect_uri=http://apps.facebook.com/girucode/&scope=publish_stream'
             }
             else
             {
-              top.location.href = 'https://www.facebook.com/dialog/oauth?client_id=212654485574232&redirect_uri=http://apps.facebook.com/girucobeta/&scope=publish_stream'
+              top.location.href = 'https://www.facebook.com/dialog/oauth?client_id=514448035289505&redirect_uri=http://apps.facebook.com/girucode/&scope=publish_stream'
             }
         });
       };
@@ -90,7 +90,7 @@
       <div class="inner">
         <header>
           <h1><a href="#" id="logo">Fundación Girucode</a></h1>
-          <h6>Beta Developed by <a href="https://www.facebook.com/angel.kurten?ref=tn_tnmn">Angel Kurten</a></h6>
+          <h6>v1.0 Developed by <a href="https://www.facebook.com/angel.kurten?ref=tn_tnmn"></a></h6>
           <hr />
           <span class="byline">
             Bienvenid@ <?php echo $user['name'] ?>, esta aplicacion te permite mantenerte en contacto con nosotros, 
@@ -136,7 +136,7 @@
       else
       {
       ?>
-        <script>top.location.href = 'https://www.facebook.com/dialog/oauth?client_id=212654485574232&redirect_uri=http://apps.facebook.com/girucobeta/&scope=publish_stream'</script>
+        <script>top.location.href = 'https://www.facebook.com/dialog/oauth?client_id=514448035289505&redirect_uri=http://apps.facebook.com/girucode/&scope=publish_stream'</script>
       <?php
       }
     ?>
