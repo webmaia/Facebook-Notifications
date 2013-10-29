@@ -1,4 +1,4 @@
 <?php
-	$config['appId']  = '514448035289505';
-	$config['secret'] = '0077cc0f2364adea04a39e5d9dbd4337';
+	$config['appId']  = '212654485574232';
+	$config['secret'] = '43f516956439f1a03fb60dddd5eb0afe';
 	$config['grant_type']='client_credentials';
