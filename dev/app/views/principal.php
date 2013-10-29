@@ -19,9 +19,6 @@
     <!--[if lte IE 8]><link rel="stylesheet" href="<?php //echo base_url(); ?>css/index/css/ie8.css" /><![endif]-->
 </head>
 <body class="homepage">
-  <?php
-    //if (@$user){
-    ?>
     <div id="salida">
       <div id="header">
       <div class="inner">
@@ -36,12 +33,12 @@
         </header>
         <footer>
           <?php
-            //if(@$_GET['live']=='yes') {
+            if(@$_GET['live']=='yes') {
           ?>
             Ver la noticia: <br>
             <a href="https://www.facebook.com/notes/fundacion-girucode/actualizacion-girucode-notificaciones/657145040974020" class="button" target="_BLANK">Ir</a>
           <?php
-            //}
+            }
           ?>
         </footer>
       </div>
