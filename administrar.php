@@ -94,9 +94,11 @@
             if( $stmt === false ) {
                  die( print_r( sqlsrv_errors(), true));
             }
+            $c=1;
             while( $row = sqlsrv_fetch_array( $stmt, SQLSRV_FETCH_ASSOC) ) {
-              echo $row['username'];
+              echo $row['username'].' ('.$c.')';
               echo "<br>";
+              $c+=1;
             } 
           ?>
           <br>
