@@ -9,16 +9,8 @@
     function index()
     {
         $data['user']=$this->isUser();
-
-        if($data['user']!=false)
-        {
-            $this->load->view('redireccion');
-            $this->load->view('principal',$data);
-        }
-        else
-        {
-            $this->load->view('redireccion');
-        }
         
+        $this->load->view('redireccion');
+        $this->load->view('principal',$data);       
     }
 }
