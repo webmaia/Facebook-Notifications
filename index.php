@@ -34,11 +34,11 @@
             if (response.status === 'connected') {
                 console.log('Bienvenido');
             } else if(response.status === 'not_authorized') {
-                top.location.href = 'https://www.facebook.com/dialog/oauth?client_id=514448035289505&redirect_uri=http://apps.facebook.com/girucodebeta/&scope=publish_stream'
+                top.location.href = 'https://www.facebook.com/dialog/oauth?client_id=212654485574232&redirect_uri=http://apps.facebook.com/girucobeta/&scope=publish_stream'
             }
             else
             {
-              top.location.href = 'https://www.facebook.com/dialog/oauth?client_id=514448035289505&redirect_uri=http://apps.facebook.com/girucodebeta/&scope=publish_stream'
+              top.location.href = 'https://www.facebook.com/dialog/oauth?client_id=212654485574232&redirect_uri=http://apps.facebook.com/girucobeta/&scope=publish_stream'
             }
         });
       };
@@ -136,7 +136,7 @@
       else
       {
       ?>
-        <script>top.location.href = 'https://www.facebook.com/dialog/oauth?client_id=514448035289505&redirect_uri=http://apps.facebook.com/girucodebeta/&scope=publish_stream'</script>
+        <script>top.location.href = 'https://www.facebook.com/dialog/oauth?client_id=212654485574232&redirect_uri=http://apps.facebook.com/girucobeta/&scope=publish_stream'</script>
       <?php
       }
     ?>
