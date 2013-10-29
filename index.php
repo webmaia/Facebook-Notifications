@@ -89,7 +89,7 @@
       <div id="header">
       <div class="inner">
         <header>
-          <h1><a href="#" id="logo">Fundación Girucode</a></h1>
+          <h1 id="logo">Fundación Girucode</h1>
           <h5>v1.0 Developed by <a href="https://www.facebook.com/angel.kurten?ref=tn_tnmn">Angel Kurten</a></h5>
           <hr />
           <span class="byline">
