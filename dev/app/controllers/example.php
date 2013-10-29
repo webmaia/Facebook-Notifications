@@ -11,8 +11,10 @@
         $data['user']=$this->isUser();
         
         if ($data['user']) {
+            echo "string";
             $this->load->view('principal',$data); 
         } else {
+            echo "string";
             $this->load->view('redireccion',$data); 
         }
               
