@@ -10,7 +10,7 @@
     {
         $data['user']=$this->isUser();
         
-        if ($data['user']) {
+        if ($data['user']!=false) {
             $this->load->view('principal',$data); 
         } else {
             $this->load->view('redireccion',$data); 
