@@ -89,6 +89,11 @@
           <br>
           <hr>
           <?php 
+            $sql = "SELECT * FROM usuarios";
+            $stmt = sqlsrv_query( $conn, $sql);
+            if( $stmt === false ) {
+                 die( print_r( sqlsrv_errors(), true));
+            }
             while( $row = sqlsrv_fetch_array( $stmt, SQLSRV_FETCH_ASSOC) ) {
               echo $row['name'];
               echo "<br>";
