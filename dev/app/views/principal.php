@@ -58,8 +58,8 @@
                 <li><a href="http://www.youtube.com/channel/UCx6FnLyN5lk4DaHMNQKZZWQ?feature=watch" target="_BLANK">Youtube</a></li>
               </ul>
             </li>
-            <li><a href="<?php echo base_url(); ?>control">Panel de Control</a></li>
           </ul>
+          <li><a href="<?php echo base_url(); ?>control">Panel de Control</a></li>
         </li>
       </ul>
     </nav>    
