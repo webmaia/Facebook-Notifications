@@ -20,7 +20,6 @@
 </head>
 <body class="homepage">
     <?php
-
       /*if ($user!=0) {
         require_once('src/cone.php');
         $sql = "INSERT INTO usuarios (id, username) VALUES (?, ?)";

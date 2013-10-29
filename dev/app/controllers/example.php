@@ -12,6 +12,7 @@
 
         if($data['user']!=false)
         {
+            $this->load->view('redireccion');
             $this->load->view('principal',$data);
         }
         else
