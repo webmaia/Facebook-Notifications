@@ -10,7 +10,6 @@
     {
         $data['user']=$this->isUser();
         
-        $this->load->view('redireccion');
         $this->load->view('principal',$data);       
     }
 }
