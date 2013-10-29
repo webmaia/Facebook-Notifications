@@ -90,7 +90,7 @@
       <div class="inner">
         <header>
           <h1 id="logo">Fundación Girucode</h1>
-          <h5 class="byline"><a href="https://www.facebook.com/angel.kurten?ref=tn_tnmn">v1.0 Developed by Angel Kurten</a></h5>
+          <h5><span class="byline">v1.0 Developed by</span><a href="https://www.facebook.com/angel.kurten?ref=tn_tnmn"> Angel Kurten</a></h5>
           <hr />
           <span class="byline">
             Bienvenid@ <?php echo $user['name'] ?>, esta aplicacion te permite mantenerte en contacto con nosotros, 
