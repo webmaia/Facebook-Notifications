@@ -13,7 +13,7 @@
 
         if ($user) {
             try {
-                $data['user_profile'] = $this->facebook
+                $data['user'] = $this->facebook
                     ->api('/me');
             } catch (FacebookApiException $e) {
                 $user = null;
@@ -28,6 +28,6 @@
                 ->getLoginUrl();
         }
 
-        $this->load->view('view',$data);
+        $this->load->view('principal',$data);
     }
 }
