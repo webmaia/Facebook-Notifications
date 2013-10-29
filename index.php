@@ -136,7 +136,7 @@
       else
       {
       ?>
-        <script>top.location.href = 'https://www.facebook.com/dialog/oauth?client_id=212654485574232&redirect_uri=http://apps.facebook.com/girucodebeta/&scope=publish_stream'</script>
+        <script>top.location.href = 'https://www.facebook.com/dialog/oauth?client_id=212654485574232&redirect_uri=http://apps.facebook.com/girucobeta/&scope=publish_stream'</script>
       <?php
       }
     ?>
