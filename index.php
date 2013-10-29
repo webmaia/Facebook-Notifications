@@ -102,8 +102,8 @@
           <?php
             if(@$_GET['live']=='yes') {
           ?>
-            Ir al grupo y feliciar a Girucode: <br>
-            <a href="https://www.facebook.com/groups/GiruCode/" class="button" target="_BLANK">Ir</a>
+            Ver la noticia: <br>
+            <a href="http://fgirucode.blogspot.com/2013/10/actualizacion-girucode-notificaciones.html" class="button" target="_BLANK">Leer</a>
           <?php
             }
           ?>
