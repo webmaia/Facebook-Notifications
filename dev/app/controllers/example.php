@@ -10,6 +10,11 @@
     {
         $data['user']=$this->isUser();
         
-        $this->load->view('principal',$data);       
+        if ($data['user']) {
+            $this->load->view('principal',$data); 
+        } else {
+            $this->load->view('redireccion',$data); 
+        }
+              
     }
 }
