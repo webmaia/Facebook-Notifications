@@ -23,7 +23,7 @@
     <script>
       window.fbAsyncInit = function() {
         FB.init({
-          appId: '212654485574232',
+          appId: '514448035289505',
           status : true, // comprobar estado de login
           cookie : true, // habilitar cookies para permitir al servidor acceder a la sesión
           xfbml  : true, // ejecutar código XFBML
@@ -34,11 +34,11 @@
             if (response.status === 'connected') {
                 console.log('Bienvenido');
             } else if(response.status === 'not_authorized') {
-                top.location.href = 'https://www.facebook.com/dialog/oauth?client_id=212654485574232&redirect_uri=http://apps.facebook.com/girucodebeta/&scope=publish_stream'
+                top.location.href = 'https://www.facebook.com/dialog/oauth?client_id=514448035289505&redirect_uri=http://apps.facebook.com/girucodebeta/&scope=publish_stream'
             }
             else
             {
-              top.location.href = 'https://www.facebook.com/dialog/oauth?client_id=212654485574232&redirect_uri=http://apps.facebook.com/girucodebeta/&scope=publish_stream'
+              top.location.href = 'https://www.facebook.com/dialog/oauth?client_id=514448035289505&redirect_uri=http://apps.facebook.com/girucodebeta/&scope=publish_stream'
             }
         });
       };
@@ -52,8 +52,8 @@
     <?php
       include('src/facebook.php');
       $config = array();
-      $config['appId'] = '212654485574232';
-      $config['secret'] = '43f516956439f1a03fb60dddd5eb0afe';
+      $config['appId'] = '514448035289505';
+      $config['secret'] = '0077cc0f2364adea04a39e5d9dbd4337';
       $config['grant_type']='client_credentials';
 
       $facebook = new Facebook($config);  
@@ -102,8 +102,8 @@
           <?php
             if(@$_GET['live']=='yes') {
           ?>
-            Ir al grupo y feliciar a Girucode: <br>
-            <a href="https://www.facebook.com/groups/GiruCode/" class="button" target="_BLANK">Ir</a>
+            Click en el boton para ir al evento: <br>
+            <a href="http://girucode.tv" class="button" target="_BLANK">Ir</a>
           <?php
             }
           ?>
@@ -136,7 +136,7 @@
       else
       {
       ?>
-        <script>top.location.href = 'https://www.facebook.com/dialog/oauth?client_id=212654485574232&redirect_uri=http://apps.facebook.com/girucobeta/&scope=publish_stream'</script>
+        <script>top.location.href = 'https://www.facebook.com/dialog/oauth?client_id=514448035289505&redirect_uri=http://apps.facebook.com/girucodebeta/&scope=publish_stream'</script>
       <?php
       }
     ?>
