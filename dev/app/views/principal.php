@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.dropotron.js"></script>
-    <script src="js/skel.min.js"></script>
-    <script src="js/skel-panels.min.js"></script>
-    <script src="js/init.js"></script>
+    <script src="<?php echo base_url(); ?>js/index/jquery.min.js"></script>
+    <script src="<?php echo base_url(); ?>js/index/jquery.dropotron.js"></script>
+    <script src="<?php echo base_url(); ?>js/index/skel.min.js"></script>
+    <script src="<?php echo base_url(); ?>js/index/skel-panels.min.js"></script>
+    <script src="<?php echo base_url(); ?>js/index/init.js"></script>
 
-      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="<?php echo base_url(); ?>css/index/style.css" />
       <noscript>
-        <link rel="stylesheet" href="css/skel-noscript.css" />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/style-noscript.css" />
+        <link rel="stylesheet" href="<?php echo base_url(); ?>css/index/skel-noscript.css" />
+        <link rel="stylesheet" href="<?php echo base_url(); ?>css/index/style.css" />
+        <link rel="stylesheet" href="<?php echo base_url(); ?>css/index/style-noscript.css" />
       </noscript>
 
-    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="<?php echo base_url(); ?>css/index/css/ie8.css" /><![endif]-->
 </head>
 <body class="homepage">
     <?php
