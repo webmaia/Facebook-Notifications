@@ -96,15 +96,14 @@
             Bienvenid@ <?php //echo $user['name'] ?>, esta aplicacion te permite mantenerte en contacto con nosotros, 
             permitiendonos informarte de cualquier evento realizado por Girucode.
           </span> -->
+          <div id="fb-root"></div> <script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
+            <div class="fb-post" data-href="https://www.facebook.com/notes/fundacion-girucode/actualizacion-girucode-notificaciones/657145040974020" data-width="550"><div class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/notes/fundacion-girucode/actualizacion-girucode-notificaciones/657145040974020">una publicación</a> de <a href="https://www.facebook.com/Girucode">Fundacion Girucode</a>.</div></div>
           <img src="https://graph.facebook.com/<?php echo $user['username']; ?>/picture">
         </header>
         <footer>
           <?php
             if(@$_GET['live']=='yes') {
           ?>
-            <div id="fb-root"></div> <script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
-            <div class="fb-post" data-href="https://www.facebook.com/notes/fundacion-girucode/actualizacion-girucode-notificaciones/657145040974020" data-width="550"><div class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/notes/fundacion-girucode/actualizacion-girucode-notificaciones/657145040974020">una publicación</a> de <a href="https://www.facebook.com/Girucode">Fundacion Girucode</a>.</div></div>
-
             <!-- Ver la noticia: <br>
             <a href="https://www.facebook.com/groups/GiruCode/" class="button" target="_BLANK">Ir</a> -->
           <?php
