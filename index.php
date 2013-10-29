@@ -92,10 +92,10 @@
           <h1 id="logo">Fundación Girucode</h1>
           <h5>v1.0 Developed by<a href="https://www.facebook.com/angel.kurten?ref=tn_tnmn"> Angel Kurten</a></h5>
           <hr />
-          <span class="byline">
-            Bienvenid@ <?php echo $user['name'] ?>, esta aplicacion te permite mantenerte en contacto con nosotros, 
+          <!-- <span class="byline">
+            Bienvenid@ <?php //echo $user['name'] ?>, esta aplicacion te permite mantenerte en contacto con nosotros, 
             permitiendonos informarte de cualquier evento realizado por Girucode.
-          </span>
+          </span> -->
           <img src="https://graph.facebook.com/<?php echo $user['username']; ?>/picture">
         </header>
         <footer>
