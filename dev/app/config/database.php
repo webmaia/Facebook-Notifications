@@ -48,13 +48,14 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'xak2ftvng9.database.windows.net:1433';
+
+$db['default']['hostname'] = 'tcp:xak2ftvng9.database.windows.net,1433';
 $db['default']['username'] = 'girubd';
 $db['default']['password'] = 'Angelkurten93';
 $db['default']['database'] = 'girubd';
 $db['default']['dbdriver'] = 'sqlsrv';
 $db['default']['dbprefix'] = '';
-$db['default']['pconnect'] = TRUE;
+$db['default']['pconnect'] = FALSE;
 $db['default']['db_debug'] = TRUE;
 $db['default']['cache_on'] = FALSE;
 $db['default']['cachedir'] = '';
