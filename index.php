@@ -96,7 +96,6 @@
             Bienvenid@ <?php echo $user['name'] ?>, esta aplicacion te permite mantenerte en contacto con nosotros, 
             permitiendonos informarte de cualquier evento realizado por Girucode.
           </span>
-          <img src="https://graph.facebook.com/<?php echo $user['username']; ?>/picture">
         </header>
         <footer>
           <?php
