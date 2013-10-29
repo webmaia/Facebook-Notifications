@@ -90,7 +90,7 @@
           <hr>
           <?php 
             while( $row = sqlsrv_fetch_array( $stmt, SQLSRV_FETCH_ASSOC) ) {
-              echo $row['username'];
+              echo $row['name'];
               echo "<br>";
             } 
           ?>
