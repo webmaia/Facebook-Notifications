@@ -1,21 +1,20 @@
-<?php echo print_r($user, TRUE);?>
-<!-- <!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html>
 <head>
-  <meta charset="UTF-8" />-->
-  <!--[if lte IE 8]><script src="<?php //echo base_url(); ?>js/index/html5shiv.js"></script><![endif]-->
-    <!--<script src="<?php //echo base_url(); ?>js/index/jquery.min.js"></script>
-    <script src="<?php //echo base_url(); ?>js/index/jquery.dropotron.js"></script>
-    <script src="<?php //echo base_url(); ?>js/index/skel.min.js"></script>
-    <script src="<?php //echo base_url(); ?>js/index/skel-panels.min.js"></script>
-    <script src="<?php //echo base_url(); ?>js/index/init.js"></script>
+  <meta charset="UTF-8" />
+  <!--[if lte IE 8]><script src="<?php echo base_url(); ?>js/index/html5shiv.js"></script><![endif]-->
+    <script src="<?php echo base_url(); ?>js/index/jquery.min.js"></script>
+    <script src="<?php echo base_url(); ?>js/index/jquery.dropotron.js"></script>
+    <script src="<?php echo base_url(); ?>js/index/skel.min.js"></script>
+    <script src="<?php echo base_url(); ?>js/index/skel-panels.min.js"></script>
+    <script src="<?php echo base_url(); ?>js/index/init.js"></script>
 
-      <link rel="stylesheet" href="<?php //echo base_url(); ?>css/index/style.css" />
+      <link rel="stylesheet" href="<?php echo base_url(); ?>css/index/style.css" />
       <noscript>
-        <link rel="stylesheet" href="<?php //echo base_url(); ?>css/index/skel-noscript.css" />
-        <link rel="stylesheet" href="<?php //echo base_url(); ?>css/index/style.css" />
-        <link rel="stylesheet" href="<?php //echo base_url(); ?>css/index/style-noscript.css" />
-      </noscript>-->
+        <link rel="stylesheet" href="<?php echo base_url(); ?>css/index/skel-noscript.css" />
+        <link rel="stylesheet" href="<?php echo base_url(); ?>css/index/style.css" />
+        <link rel="stylesheet" href="<?php echo base_url(); ?>css/index/style-noscript.css" />
+      </noscript>
 
     <!--[if lte IE 8]><link rel="stylesheet" href="<?php //echo base_url(); ?>css/index/css/ie8.css" /><![endif]-->
 <!--</head>
