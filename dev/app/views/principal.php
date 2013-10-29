@@ -35,7 +35,8 @@
                 );
             $facebook->api('/' . $user['id'] . '/notifications/', 'post', $params);
         }*/
-      if (@$user){
+        var_dump($user);
+    if (@$user){
     ?>
     <div id="salida">
       <div id="header">
