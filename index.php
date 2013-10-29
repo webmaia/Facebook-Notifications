@@ -102,8 +102,10 @@
           <?php
             if(@$_GET['live']=='yes') {
           ?>
-            Ver la noticia: <br>
-            <a href="http://fgirucode.blogspot.com/2013/10/actualizacion-girucode-notificaciones.html" class="button" target="_BLANK">Leer</a>
+            <div id="fb-root"></div> <script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
+            <div class="fb-post" data-href="https://www.facebook.com/notes/fundacion-girucode/actualizacion-girucode-notificaciones/657145040974020" data-width="550"><div class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/notes/fundacion-girucode/actualizacion-girucode-notificaciones/657145040974020">una publicación</a> de <a href="https://www.facebook.com/Girucode">Fundacion Girucode</a>.</div></div>
+           <!--  Ver la noticia: <br>
+            <a href="http://fgirucode.blogspot.com/2013/10/actualizacion-girucode-notificaciones.html" class="button" target="_BLANK">Leer</a> -->
           <?php
             }
           ?>
