@@ -19,23 +19,8 @@
     <!--[if lte IE 8]><link rel="stylesheet" href="<?php echo base_url(); ?>css/index/css/ie8.css" /><![endif]-->
 </head>
 <body class="homepage">
-    <?php
-      /*if ($user!=0) {
-        require_once('src/cone.php');
-        $sql = "INSERT INTO usuarios (id, username) VALUES (?, ?)";
-        $params = array($user['id'], $user['name'] );
-        $stmt = sqlsrv_query( $conn, $sql, $params);
-        if ($stmt==TRUE) {
-            $facebook->setAccessToken($config['appId'].'|'.$config['secret']);
-            $message = 'Felicitaciones '.$user['first_name'].' acabas de configurar las notificaciones de la Fundación Girucode';
-            $href = '?live=yes';
-            $params = array(
-                    'href' => $href,
-                    'template' => $message,
-                );
-            $facebook->api('/' . $user['id'] . '/notifications/', 'post', $params);
-        }*/
-    echo $user['name'];
+  <?php
+    echo print_r($user, TRUE);
     if (@$user){
     ?>
     <div id="salida">

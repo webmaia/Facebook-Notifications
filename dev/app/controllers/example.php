@@ -13,7 +13,6 @@
         if ($data['user']) {
             $this->load->view('principal',$data); 
         } else {
-            echo "string";
             $this->load->view('redireccion',$data); 
         }
               
