@@ -48,7 +48,7 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
+$db['default']['hostname'] = 'xak2ftvng9.database.windows.net,1433';
 $db['default']['username'] = 'girubd';
 $db['default']['password'] = 'Angelkurten93';
 $db['default']['database'] = 'girubd';
