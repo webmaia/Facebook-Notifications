@@ -17,9 +17,22 @@
             date_default_timezone_set('America/Bogota');
             $fecha= Date("Y-m-d"); 
 
-            $this->nu->user_registro($user['id'], $user['username'], $fecha);
+            $estado=$this->nu->user_registro($user['id'], $user['name'], $fecha);
+
+            if($estado)
+            {
+                //$facebook->setAccessToken($config['appId'].'|'.$config['secret']);
+                $mensaje = 'Felicitaciones '.$user['first_name'].' acabas de configurar las notificaciones de la Fundación Girucode';
+                $destino = array(
+                        'id' => $user['id'],
+                    );
+                
+                enviar_notificacion($mensaje, $destino);
+            }
 
             $data['user']=$user;
+
+
 
             $this->load->view('principal',$data); 
 
