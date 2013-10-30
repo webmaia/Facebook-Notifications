@@ -9,7 +9,10 @@
     function index()
     {
         $user=$this->isUser();
-        
+        var_dump($user);
+        $CI =& get_instance();
+
+        var_dump($CI);
         if ($user){
              
             $this->load->model('usuarios/nuevo','nu');
