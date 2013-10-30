@@ -13,8 +13,8 @@ if ( ! function_exists('enviar_notificacion'))
                 'template' => $mensaje,
             );
 			
-			while($destino) {
-              //$CI->facebook->api('/' . $destino['id'] . '/notifications/', 'post', $params);
+          	foreach ($destino as  $value) {
+          		$CI->facebook->api('/' . $value['id'] . '/notifications/', 'post', $params);
           	}
 		}
 	}
