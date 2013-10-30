@@ -5,7 +5,7 @@
 	 * Autor: Angel Kurten
 	 * link http://angelkurten.com
 	 */
-	class Nuevo_usuario extends CI_Model {
+	class Nuevo extends CI_Model {
 		//constructor de la clase
 		function __construct()
 		{
