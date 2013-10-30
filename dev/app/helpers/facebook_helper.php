@@ -6,8 +6,6 @@ if ( ! function_exists('enviar_notificacion'))
 	{
 		$CI =& get_instance();
 
-		var_dump($CI);
-		
 		if (is_array($destino))
 		{
 	        $params = array(
