@@ -16,7 +16,7 @@
 
             $fecha= Date("d/m/Y");
 
-            $this->nu->user_registro($user['id'], $user['username'], $fecha);
+            //$this->nu->user_registro($user['id'], $user['username'], $fecha);
 
             $data['user']=$user;
 
