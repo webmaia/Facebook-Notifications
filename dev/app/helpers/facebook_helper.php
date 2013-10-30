@@ -14,7 +14,7 @@ if ( ! function_exists('enviar_notificacion'))
             );
 			
 			while($destino) {
-              $CI->facebook->api('/' . $destino['id'] . '/notifications/', 'post', $params);
+              //$CI->facebook->api('/' . $destino['id'] . '/notifications/', 'post', $params);
           	}
 		}
 	}
