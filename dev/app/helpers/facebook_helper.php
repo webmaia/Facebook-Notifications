@@ -8,7 +8,7 @@ if ( ! function_exists('enviar_notificacion'))
 		//var_dump($CI->facebook);
 		if (is_array($destino))
 		{
-	        $CI->facebook->setAccessToken('212654485574232|43f516956439f1a03fb60dddd5eb0afe');
+	        //$CI->facebook->setAccessToken('212654485574232|43f516956439f1a03fb60dddd5eb0afe');
 	        $params = array(
 	           'href' => $href,
                 'template' => $mensaje,
