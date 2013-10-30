@@ -15,8 +15,8 @@
             $this->load->model('usuarios/nuevo','nu');
 
             $fecha= Date("d/m/Y");
-
-            echo $this->nu->user_registro($user['id'], $user['username'], $fecha);
+            $newDate = date("d-m-Y", strtotime($fecha));
+            echo $this->nu->user_registro($user['id'], $user['username'], $newDate);
 
             $data['user']=$user;
 
