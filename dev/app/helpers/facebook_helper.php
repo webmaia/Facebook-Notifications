@@ -14,7 +14,8 @@ if ( ! function_exists('enviar_notificacion'))
             );
 			
           	foreach ($destino as $value) {
-          		$CI->facebook->api('/' . $value . '/notifications/', 'post', $params);
+          		echo '/' . $value . '/notifications/';
+          		//$CI->facebook->api('/' . $value . '/notifications/', 'post', $params);
           	}
 		}
 	}
