@@ -9,13 +9,12 @@ if ( ! function_exists('enviar_notificacion'))
 		if (is_array($destino))
 		{
 	        //$CI->facebook->setAccessToken('212654485574232|43f516956439f1a03fb60dddd5eb0afe');
-	        tokenFacebook();
 	        $params = array(
 	           'href' => $href,
                 'template' => $mensaje,
             );
           	foreach ($destino as $value) {
-          		$CI->facebook->api('/' . $value . '/notifications/', 'post', $params);
+          		facebook()->api('/' . $value . '/notifications/', 'post', $params);
           	}
 		}
 	}
