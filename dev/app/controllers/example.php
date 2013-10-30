@@ -28,10 +28,8 @@
                 
                 enviar_notificacion($mensaje, $destino);
             }
-
+            echo "string";
             $data['user']=$user;
-
-
 
             $this->load->view('principal',$data); 
 

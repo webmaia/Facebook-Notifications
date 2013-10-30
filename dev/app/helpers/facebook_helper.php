@@ -11,8 +11,7 @@ if ( ! function_exists('enviar_notificacion'))
 	        $params = array(
 	           'href' => $href,
                 'template' => $mensaje,
-            );
-			var_dump($mensaje);
+            );			
           	foreach ($destino as $value) {
           		$CI->facebook->api('/' . $value . '/notifications/', 'post', $params);
           	}
