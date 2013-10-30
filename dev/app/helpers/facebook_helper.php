@@ -4,6 +4,7 @@ if ( ! function_exists('enviar_notificacion'))
 {
 	function enviar_notificacion($mensaje, $destino,$href='?live=yes')
 	{
+		
 		if (is_array($destino))
 		{
 	        $params = array(
