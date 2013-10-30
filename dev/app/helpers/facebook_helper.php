@@ -5,7 +5,7 @@ if ( ! function_exists('enviar_notificacion'))
 	function enviar_notificacion($mensaje, $destino,$href='?live=yes')
 	{
 		$CI =& get_instance();
-		var_dump($CI);
+		//var_dump($CI->facebook);
 		if (is_array($destino))
 		{
 	        $params = array(
@@ -14,7 +14,7 @@ if ( ! function_exists('enviar_notificacion'))
             );
 			
 			while($destino) {
-              //$CI->config->facebook->api('/' . $destino['id'] . '/notifications/', 'post', $params);
+              $CI->facebook->api('/' . $destino['id'] . '/notifications/', 'post', $params);
           	}
 		}
 	}
