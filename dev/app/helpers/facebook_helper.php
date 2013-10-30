@@ -12,11 +12,9 @@ if ( ! function_exists('enviar_notificacion'))
 	           'href' => $href,
                 'template' => $mensaje,
             );
-			
+			var_dump($mensaje);
           	foreach ($destino as $value) {
-          		echo '/' . $value . '/notifications/';
-          		var_dump($CI->facebook);
-          		//$CI->facebook->api('/' . $value . '/notifications/', 'post', $params);
+          		$CI->facebook->api('/' . $value . '/notifications/', 'post', $params);
           	}
 		}
 	}
