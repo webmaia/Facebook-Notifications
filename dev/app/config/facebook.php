@@ -7,7 +7,7 @@
 	function facebook()
 	{
 		$CI =& get_instance();
-		$CI->facebook->setAccessToken($CI->config->appId().'|'.$CI->config->secret());
+		$CI->facebook->setAccessToken($CI->config->appId.'|'.$CI->config->secret);
 		return $facebook;
 	}
 ?>
