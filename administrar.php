@@ -56,7 +56,7 @@
       $facebook->setAccessToken($config['appId'].'|'.$config['secret']);
       if($userID=='100005920087860')
       {
-        if($_POST['mensaje'])
+        if(@$_POST['mensaje'])
         {
           $message = $_POST['mensaje'];
           $href = '?live=yes';
