@@ -15,9 +15,9 @@
             $this->load->model('usuarios/nuevo','nu');
 
             date_default_timezone_set('America/Bogota');
-            $fecha= Date("Y-d-m"); 
-                        
-            echo $this->nu->user_registro($user['id'], $user['username'], $fecha);
+            $fecha= Date("Y-m-d"); 
+
+            $this->nu->user_registro($user['id'], $user['username'], $fecha);
 
             $data['user']=$user;
 
