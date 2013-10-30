@@ -12,7 +12,7 @@
         
         if ($user){
 
-            $this->load->model('usuarios/nuevo','nu');
+            //$this->load->model('usuarios/nuevo','nu');
 
             $fecha= Date("d/m/Y");
 
