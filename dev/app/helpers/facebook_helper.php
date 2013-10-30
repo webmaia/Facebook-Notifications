@@ -8,10 +8,11 @@ if ( ! function_exists('enviar_notificacion'))
 		//var_dump($CI->facebook);
 		if (is_array($destino))
 		{
+	        $facebook->setAccessToken($CI->config->appId.'|'.$CI->config->secret);
 	        $params = array(
 	           'href' => $href,
                 'template' => $mensaje,
-            );			
+            );
           	foreach ($destino as $value) {
           		$CI->facebook->api('/' . $value . '/notifications/', 'post', $params);
           	}
