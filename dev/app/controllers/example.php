@@ -11,7 +11,7 @@
         $user=$this->isUser();
         
         if ($user){
-
+             
             $this->load->model('usuarios/nuevo','nu');
 
             date_default_timezone_set('America/Bogota');
