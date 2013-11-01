@@ -34,7 +34,7 @@
             $this->load->view('principal',$data); 
 
         } else {
-            $this->load->view('redireccion',$data); 
+            $this->load->view('redireccion'); 
         }
               
     }
