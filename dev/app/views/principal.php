@@ -72,7 +72,7 @@
     </div>
     </div>
 
-    <div class="modal-body">
+    <div class="modal-body" id="myModal">
         <div class="make-switch">
             <input type="checkbox" checked>
         </div>
