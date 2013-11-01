@@ -18,9 +18,8 @@
         <link rel="stylesheet" href="<?php echo base_url(); ?>css/index/style-noscript.css" />
       </noscript>
       
-      <link rel="stylesheet" href="<?php echo base_url(); ?>css/modal/bootstrap-combined.min.css">
       <link rel="stylesheet" href="<?php echo base_url(); ?>css/modal/bootstrap-switch.css">
-      
+
       <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8;" />
       <script src="<?php echo base_url(); ?>js/modal/bootstrap-switch.js"></script> 
     
