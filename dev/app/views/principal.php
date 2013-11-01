@@ -69,12 +69,12 @@
             <li><a href="#myModal" role="button" data-toggle="modal">Panel de Control</a></li>
           </ul>
         </nav>  
-        <div class="modal-body">
+        <div class="modal-body" id="myModal">
           <div class="make-switch">
               <input type="checkbox" checked>
           </div>
         </div>
-      ¿</div>
+      </div>
     </div>
   </body>
 </html>
