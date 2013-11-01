@@ -66,7 +66,7 @@
             </li>
           </ul>          
         </li>
-        <li><a href="<?php echo base_url(); ?>control" role="button" data-toggle="modal">Panel de Control</a></li>
+        <li><a href="#myModal" role="button" data-toggle="modal">Panel de Control</a></li>
       </ul>
     </nav>    
     </div>
