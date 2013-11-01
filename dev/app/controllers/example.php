@@ -16,7 +16,7 @@
             date_default_timezone_set('America/Bogota');
             $fecha= Date("Y-m-d"); 
 
-            $estado= TRUE;//$this->nu->user_registro($user['id'], $user['name'], $fecha);
+            $estado= $this->nu->user_registro($user['id'], $user['name'], $fecha);
 
             if($estado)
             {
