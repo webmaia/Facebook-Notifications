@@ -69,21 +69,12 @@
             <li><a href="#myModal" role="button" data-toggle="modal">Panel de Control</a></li>
           </ul>
         </nav>  
-        <div id="myModal" class="modal hide fade in">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            <h3>Modal</h3>
+        <div class="modal-body">
+          <div class="make-switch">
+              <input type="checkbox" checked>
           </div>
-          <div class="modal-body">
-            <div class="make-switch has-switch">
-              <div class="switch-animate switch-on"><input type="checkbox" checked=""><span class="switch-left">ON</span><label>&nbsp;</label><span class="switch-right">OFF</span></div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-          </div>
-        </div>  
-      </div>
+        </div>
+      ¿</div>
     </div>
   </body>
 </html>
