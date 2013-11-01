@@ -5,6 +5,8 @@
   <!--[if lte IE 8]><script src="<?php echo base_url(); ?>js/index/html5shiv.js"></script><![endif]-->
     <script src="<?php echo base_url(); ?>js/index/jquery.min.js"></script>
     <script src="<?php echo base_url(); ?>js/index/jquery.dropotron.js"></script>
+    <script src="<?php echo base_url(); ?>js/index/skel.min.js"></script>
+    <script src="<?php echo base_url(); ?>js/index/skel-panels.min.js"></script>
     <script src="<?php echo base_url(); ?>js/index/init.js"></script>
     
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/modal/bootstrap-combined.min.css">
