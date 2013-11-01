@@ -66,10 +66,16 @@
             </li>
           </ul>          
         </li>
-        <li><a href="<?php echo base_url(); ?>control">Panel de Control</a></li>
+        <li><a href="<?php echo base_url(); ?>control" role="button" data-toggle="modal">Panel de Control</a></li>
       </ul>
     </nav>    
     </div>
+    </div>
+
+    <div class="modal-body">
+        <div class="make-switch">
+            <input type="checkbox" checked>
+        </div>
     </div>
 </body>
 </html>
