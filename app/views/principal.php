@@ -60,7 +60,7 @@
             </li>
           </ul>          
         </li>
-        <li><a href="<?php echo base_url(); ?>control">Panel de Control</a></li>
+        <!-- <li><a href="<?php //echo base_url(); ?>control">Panel de Control</a></li> -->
       </ul>
     </nav>    
     </div>
