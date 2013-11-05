@@ -35,8 +35,8 @@
           <?php
             if(@$_GET['live']=='yes') {
           ?>
-            Ver la noticia: <br>
-            <a href="https://www.facebook.com/notes/fundacion-girucode/actualizacion-girucode-notificaciones/657145040974020" class="button" target="_BLANK">Ir</a>
+            Ir al evento: <br>
+            <a href="http://youtu.be/JRq0WNzKyZo" class="button" target="_BLANK">Ir</a>
           <?php
             }
           ?>
