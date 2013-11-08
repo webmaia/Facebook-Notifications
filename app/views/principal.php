@@ -28,7 +28,7 @@
           <hr />
           <span class="byline">
             Bienvenid@ <?php echo $user['name'] ?>, esta aplicacion te permite mantenerte en contacto con nosotros, 
-            permitiendonos informarte de cualquier evento realizado por Girucode...!
+            permitiendonos informarte de cualquier evento realizado por Girucode.
           </span>
         </header>
         <footer>
